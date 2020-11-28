@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainBrowse"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/url"
+            android:paddingHorizontal="5dp"
+            android:hint="Enter url here"
+            android:layout_weight="4"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/search"
+            android:onClick="browse"
+            android:src="@drawable/log"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="12"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Shopping sites"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="3dp">
+
+
+
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:id="@+id/amazon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                app:cardElevation="5dp"
+                android:onClick="browse"
+                app:cardCornerRadius="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/amazon"
+                    />
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="browse"
+                android:id="@+id/flip"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+
+                    android:src="@drawable/flip" />
+
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+
+                android:id="@+id/myntra"
+                android:onClick="browse"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/myntra"
+
+
+                    />
+
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Browsers"
+            android:textAlignment="center"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="3dp">
+
+
+
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:id="@+id/duck"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="3dp"
+
+                android:layout_weight="1"
+                android:onClick="browse"
+
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/duck"
+
+
+                    />
+
+
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:id="@+id/chrom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="browse"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_marginHorizontal="3dp"
+
+                    android:src="@drawable/chrom"
+
+
+                    />
+
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:id="@+id/bing"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="browse"
+                android:layout_marginHorizontal="3dp"
+
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/bing"
+
+
+                    />
+
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Others"
+            android:textAlignment="center"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="3"
+            >
+
+
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:id="@+id/cb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="3dp"
+                android:layout_weight="1"
+                android:onClick="browse"
+
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/cb"
+
+
+                    />
+
+
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:id="@+id/insta"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="browse"
+                android:layout_marginHorizontal="3dp"
+
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/insta"
+
+                    />
+
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+            <ie.miao.yichong.diycardview.view.DIYRoundedCardView
+                android:id="@+id/fb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="browse"
+
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/fbpng"
+
+                    android:layout_marginHorizontal="3dp"
+
+                    />
+
+            </ie.miao.yichong.diycardview.view.DIYRoundedCardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="News"
+            android:textAlignment="center"
+
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

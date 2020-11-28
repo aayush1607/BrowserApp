@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "350138830693",
+    "firebase_url": "https://gold-circlet-288105.firebaseio.com",
+    "project_id": "gold-circlet-288105",
+    "storage_bucket": "gold-circlet-288105.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350138830693:android:7eba28660ab173534b5b8c",
+        "android_client_info": {
+          "package_name": "com.example.browser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350138830693-tpots9fkbbcehf5o7lm1b34jpkemdvpe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt8EoXekY7x1Bupuy6jV901biIeW4OGt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350138830693-tpots9fkbbcehf5o7lm1b34jpkemdvpe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
